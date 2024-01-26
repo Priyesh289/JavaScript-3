@@ -1,0 +1,26 @@
+let grain=["Rice","Dal","Salt"]
+let con=[2,3,1]
+let price=[60,50,20]
+let data=[]
+for(let i=0;i<con.length;i++){
+  let obj={}
+  obj.name=grain[i]
+  obj.quntity=con[i]
+  obj.price=price[i]
+  data.push(obj)
+}
+console.log(data)
+
+let total=0
+let a=0
+let b=0
+let c=0
+for(let j=0;j<data.length;j++)
+  {
+    a=data[j].quntity
+    b=data[j].price
+    total=a*b
+    c=total+c
+
+  }
+console.log(c)
