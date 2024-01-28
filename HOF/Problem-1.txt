@@ -1,0 +1,8 @@
+let arr = [10, 24, 56, 72, -10, -88, 100, 564];
+let newarray = arr.filter(function(ele,i){
+  return i % 2 != '0'
+});
+let sum = newarray.reduce(function(acc,curr){
+  return acc + curr
+},0)
+console.log(sum)
